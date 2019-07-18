@@ -1,0 +1,84 @@
+{
+	/*
+	  // Place your snippets for PHP here. Each snippet is defined under a snippet name and has a prefix, body and
+	  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+	  // same ids are connected.
+	  // Example:
+	  "Print to console": {
+		  "prefix": "log",
+		  "body": [
+			  "console.log('$1');",
+			  "$2"
+		  ],
+		  "description": "Log output to console"
+	  }
+  */
+	"function": {
+	  "prefix": "fff",
+	  "body": ["public function ${1:name}(){", "    ${2:code};", "}"],
+	  "description": "Declare function"
+	},
+	"php-block": {
+	  "prefix": "ppp",
+	  "body": ["<?php", "    ${1:code}", "?>"],
+	  "description": "PHP Block"
+	},
+	"vardump": {
+	  "prefix": "vd",
+	  "body": ["dump(print_r(${1:code}, true));"],
+	  "description": "dump for debug"
+	},
+	"this": {
+	  "prefix": "this",
+	  "body": ["$$this->${1:code}"],
+	  "description": "this"
+	},
+	"log-debug": {
+	  "prefix": "ld",
+	  "body": ["$$this->di->get('logger')->debug(print_r(${1:code}, true));"],
+	  "description": "log-debug"
+	},
+	"di-insert": {
+	  "prefix": "dii",
+	  "body": ["$$this->di->get('${1:classname}')->${1:methodname}();"],
+	  "description": "di-insert"
+	},
+	"array-member": {
+	  "prefix": "aaa",
+	  "body": ["'${1:key}' => '${2:value}',"],
+	  "description": "array-member"
+	},
+	"bind": {
+	  "prefix": "ff",
+	  "body": [
+		"$$item = $$this->di->get('modelName')->findFirst([",
+		"    '${1:key} = :${2:key}:',",
+		"    'bind' => [",
+		"        'key' => $$value,",
+		"    ]",
+		"]);"
+	  ],
+	  "description": "bind-findFirst"
+	},
+	"cache-block": {
+	  "prefix": "cb",
+	  "body": [
+		"'cache' => [",
+		"    'key' => 'DataReader_' . $$key,",
+		"    'lifetime' => $$cacheLifeTimeSecs,",
+		"]"
+	  ],
+	  "description": "cache-block"
+	},
+	"logic": {
+	  "prefix": "lg",
+	  "body": ["$$this->di->get('logicHelper')->${1:code}"],
+	  "description": "logic"
+	},
+	"translate": {
+	  "prefix": "ttt",
+	  "body": ["$$this->t->_('${1:text}');"],
+	  "description": "translate"
+	}
+  }
