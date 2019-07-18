@@ -1,0 +1,61 @@
+{
+    "editor.formatOnSave": true,
+    "blade.format.enable": true,
+    "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+    "files.associations": {
+        ".blade.php": "html",
+        ".tpl": "html",
+        "*.html": "html"
+    },
+    "[php]": {
+        "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?"
+    },
+    "phpfmt.passes": [
+        "AlignTypehint",
+        "AlignEquals",
+        "AlignDoubleArrow",
+        "AutoSemicolon",
+        "DoubleToSingleQuote",
+        "OrderMethod",
+        "ReindentAndAlignObjOps",
+        "TrimSpaceBeforeSemicolon",
+        "JoinToImplode",
+        "MergeNamespaceWithOpenTag",
+        "ReplaceBooleanAndOr",
+        // "RemoveSemicolonAfterCurly",
+        "ReindentSwitchBlocks",
+        "MergeElseIf"
+    ],
+    "phpmd.rules": "unusedcode",
+    "[javascript]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.fontSize": 16,
+    "saveAndRun": {
+        "commands": [{
+            "match": "\\.php$",
+            "cmd": "python ${workspaceRoot}/phpDeclareSet.py ${file}",
+            "silent": true
+        }]
+    },
+    "python.jediEnabled": false,
+    "window.zoomLevel": -1,
+    "files.trimTrailingWhitespace": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "eslint.validate": ["javascript", "javascriptreact", "vue"],
+    "eslint.autoFixOnSave": true,
+    "eslint.run": "onSave",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "gitlens.advanced.messages": {
+        "suppressLineUncommittedWarning": true
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.list.keyboardNavigation": "simple",
+    "editor.wordWrap": "on",
+    "editor.highlightActiveIndentGuide": false,
+    "workbench.editor.highlightModifiedTabs": true,
+    "editor.minimap.enabled": true
+}
