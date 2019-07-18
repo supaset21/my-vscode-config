@@ -3,4 +3,6 @@
 - copy config to vscode setting
 - add php and js another snippets
 
-`cat extensions.list |% { code --install-extension $_}`
+# Note
+
+If use raspbeery pi change `code` to `code-oss`
