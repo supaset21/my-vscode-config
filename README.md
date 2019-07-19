@@ -11,4 +11,4 @@ You can export extensions package with this command
 
 # Note
 
-If use raspbeery pi change `code` to `code-oss`
+If use raspberry pi change `code` to `code-oss`
