@@ -60,13 +60,12 @@ code --install-extension onecentlin.laravel-blade
 code --install-extension PKief.material-icon-theme
 code --install-extension redhat.java
 code --install-extension salbert.copy-text
-code --install-extension shardulm94.trailing-spaces
 code --install-extension shd101wyy.markdown-preview-enhanced
 code --install-extension tiagoaspina.import-file-to-folder
 code --install-extension TomiTurtiainen.rf-intellisense
 code --install-extension vincentkos.php-docblock-generator
 code --install-extension VisualStudioExptTeam.vscodeintellicode
-code --install-extension vscjava.vscode-java-debug
+code --install-extension vscjava.vscode-java-debugs
 code --install-extension vscjava.vscode-java-dependency
 code --install-extension vscjava.vscode-java-pack
 code --install-extension vscjava.vscode-java-test
